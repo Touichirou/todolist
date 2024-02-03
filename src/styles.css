@@ -10,6 +10,7 @@
     --border-radius: 5px;
     --bright-blue: hsl(220, 98%, 61%);
     --check-background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    --icon-cross-svg: url(../src/images/icon-cross.svg);
     /**
     light theme
     **/
