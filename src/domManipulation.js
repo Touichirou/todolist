@@ -1,6 +1,6 @@
 import { toDoList, createToDoElement } from "./todoItemCreator";
 import { saveData } from "./localStorageHandler";
-import svgCross from "./src/images/icon-cross.svg";
+import svgCross from "./images/icon-cross.svg";
 
 export function showOnlyCompleted() {
   let toShow = document.querySelectorAll('.todobox');

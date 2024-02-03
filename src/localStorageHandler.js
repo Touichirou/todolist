@@ -3,7 +3,7 @@ import { completeOrReinstateElement } from "./domManipulation";
 import { deleteToDoElement } from "./domManipulation";
 import { updateRemainingCount } from "./domManipulation";
 import { lightDarkToggle } from "./lightDarkModeSwitcher";
-import svgCross from "./src/images/icon-cross.svg";
+import svgCross from "./images/icon-cross.svg";
 
 
 export function saveData() {
