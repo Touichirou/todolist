@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script defer src="main.js"></script>
+
+  <title>Frontend Mentor | Todo App</title>
+</head>
+<body>
+
+  <div class="form-popup" id="myForm">
+    <form class="form-container" id="form-container">
+      <label for="title"><strong>Title</strong></label>
+      <input type="text" id="title" placeholder="Title: Pay Bills" name="title" maxlength='30' required>
+
+      <label for="due"><strong>Due</strong></label>
+      <input type="date" id="due" name="date" required>
+
+      <fieldset>
+        <legend><strong>Priority Level</strong></legend>
+      
+        <div>
+          <label for="low">Low</label>
+          <input type="radio" id="low" name="priority" value="Low" checked />
+          
+        </div>
+      
+        <div>
+          <label for="medium">Medium</label>
+          <input type="radio" id="medium" name="priority" value="Medium" />
+        </div>
+      
+        <div>
+          <label for="high">High</label>
+          <input type="radio" id="high" name="priority" value="High" />
+        </div>
+      </fieldset>
+  
+  
+      <button type="submit" class="btn submit">Add</button>
+      <button type="button" class="btn cancel">Cancel</button>
+    </form>
+  </div>
+
+
+  <div id="wrapper">
+    <header class="header">
+      <h1>TO DO</h1>
+      <div class="modeswitch"></div>
+    
+    </header>
+    <div class="todowrapper">
+      <div class="todoheader">Create a new todo...</div> 
+      <div class="todocontent">
+      </div>
+      <div class="todoinfo">
+        <p class ='remaining'>0 items left</p>
+        <p class="clearCompleted">Clear Completed</p>
+      </div>
+      <div class="todofooter">
+        <p id="all" class="filter">All</p>
+        <p id="active" class="filter">Active</p>
+        <p id="completed" class="filter">Completed</p>
+      </div>
+      <p class="instructions"></p>
+      <footer class="attribution">
+      Challenge by Frontend Mentor. Coded by Horatio Caine as a substitute for The Odin Project's Todo List project.
+    </footer>
+    </div>
+  </div>
+</body>
+</html>
