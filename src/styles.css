@@ -48,6 +48,7 @@
     width: 100vw;
     min-height: 100vh;
     position: relative;
+    box-sizing: border-box;
 }
 
 body {
@@ -182,7 +183,6 @@ input[type=checkbox] {
 
 .form-popup {
     display: none;
-    border: 3px solid #f1f1f1;
     justify-content: center;
     align-items: center;
     position: fixed;
