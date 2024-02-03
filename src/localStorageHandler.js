@@ -63,9 +63,7 @@ export function renderSavedData() {
       inputdate.textContent = element.due;
       inputpriority.textContent = element.priority;
 
-      const image = document.createElement("img");
-      image.src = "../src/images/icon-cross.svg";
-      image.alt = "A cross icon. Click to delete this entry.";
+      const image = document.createElement("div");
       image.classList.add('cross');
       image.addEventListener("click", deleteToDoElement);
 

@@ -69,9 +69,7 @@ export function showAll() {
         inputdate.textContent = newToDo.due;
         inputpriority.textContent = newToDo.priority;
     
-        const image = document.createElement("img");
-        image.src = "../src/images/icon-cross.svg";
-        image.alt = "A cross icon. Click to delete this entry.";
+        const image = document.createElement("div");
         image.classList.add('cross');
         image.addEventListener("click", deleteToDoElement);
     

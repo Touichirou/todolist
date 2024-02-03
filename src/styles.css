@@ -168,7 +168,7 @@ body {
     height: 18px;
     width: 18px;
     cursor: pointer;
-    /* background-image: var(--icon-cross-svg); */
+    background-image: var(--icon-cross-svg);
     /* margin-left: auto; */
 }
 
