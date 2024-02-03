@@ -3,6 +3,7 @@ import { completeOrReinstateElement } from "./domManipulation";
 import { deleteToDoElement } from "./domManipulation";
 import { updateRemainingCount } from "./domManipulation";
 import { lightDarkToggle } from "./lightDarkModeSwitcher";
+import svgCross from "./src/images/icon-cross.svg";
 
 
 export function saveData() {
@@ -64,7 +65,7 @@ export function renderSavedData() {
       inputpriority.textContent = element.priority;
 
       const image = document.createElement("img");
-      image.src = "../src/images/icon-cross.svg";
+      image.src = svgCross;
       image.alt = "A cross icon. Click to delete this entry.";
       image.classList.add('cross');
       image.addEventListener("click", deleteToDoElement);
