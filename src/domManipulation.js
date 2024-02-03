@@ -1,6 +1,5 @@
 import { toDoList, createToDoElement } from "./todoItemCreator";
 import { saveData } from "./localStorageHandler";
-import svgCross from "./images/icon-cross.svg";
 
 export function showOnlyCompleted() {
   let toShow = document.querySelectorAll('.todobox');
@@ -71,7 +70,7 @@ export function showAll() {
         inputpriority.textContent = newToDo.priority;
     
         const image = document.createElement("img");
-        image.src = svgCross;
+        image.src = "../src/images/icon-cross.svg";
         image.alt = "A cross icon. Click to delete this entry.";
         image.classList.add('cross');
         image.addEventListener("click", deleteToDoElement);
